@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthorDetails from './components/Footer';
+import Footer from './components/Footer';
 import Menu from "./components/Menu";
 
 export default function App() {

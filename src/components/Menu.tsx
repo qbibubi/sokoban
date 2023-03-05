@@ -15,10 +15,9 @@ export default function Menu(props: any) {
 
   return (
     <div className="flex flex-col items-center justify-center  bg-stone-850">
-      <div className="text-5xl bold text-sky-400 pb-2">Sokoban</div>
+      <div className="text-5xl bold text-blue-400 pb-2">Sokoban</div>
       <MenuButton text="PLAY" />
       <MenuButton text="SCOREBOARD" />
-
     </div>
   );
 }
