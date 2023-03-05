@@ -3,6 +3,7 @@ export default function MenuButton(props: any) {
     <button 
       type="button" 
       className="
+        w-1/4
         text-gray-900 
         hover:text-white border 
         border-gray-800 
