@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import MenuButton from './MenuButton'
 
 export default function Menu(props: any) {
   function handleClickPlay(e:any) {
@@ -13,12 +14,11 @@ export default function Menu(props: any) {
   }
 
   return (
-    <>
-    <div className="flex flex-col items-center justify-center h-screen bg-stone-850">
-      <div className="text-3xl bold text-sky-400 pb-2">Sokoban</div>
-      <button className="text-neutral-50" onClick={handleClickPlay}>Play</button>
-      <button className="text-neutral-50">Scoreboard</button>
+    <div className="flex flex-col items-center justify-center  bg-stone-850">
+      <div className="text-5xl bold text-sky-400 pb-2">Sokoban</div>
+      <MenuButton text="PLAY" />
+      <MenuButton text="SCOREBOARD" />
+
     </div>
-    </>
   );
 }

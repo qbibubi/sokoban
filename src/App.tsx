@@ -1,15 +1,13 @@
 import React from 'react';
-import AuthorDetails from './components/AuthorDetails';
+import AuthorDetails from './components/Footer';
 import Menu from "./components/Menu";
-import Game from "./components/Game";
 
 export default function App() {
   return (
-  <div className="wrapper">
-    <div className="container mx-auto bg-stone-500">
+  <div className="bg-zinc-800">
+    <div className="container mx-auto h-screen">
       <Menu />
-      <Game />
-      <AuthorDetails />
+      <Footer />
     </div>
   </div>
   );
