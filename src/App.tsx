@@ -1,11 +1,17 @@
 import React from 'react';
-import './App.css';
+import AuthorDetails from './components/AuthorDetails';
+import Menu from "./components/Menu";
+import Game from "./components/Game";
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <div className="wrapper">
+    <div className="container mx-auto bg-stone-500">
+      <Menu />
+      <Game />
+      <AuthorDetails />
+    </div>
+  </div>
   );
 }
 
