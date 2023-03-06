@@ -3,10 +3,11 @@ export default function MenuButton(props: any) {
     <button 
       type="button" 
       className="
-        w-1/4
+        w-1/5
         text-gray-900 
-        hover:text-white border 
-        border-gray-800 
+        hover:text-white 
+        border 
+        border-neutral-800 
         hover:bg-gray-900 
         focus:ring-4 
         focus:outline-none 
@@ -22,7 +23,8 @@ export default function MenuButton(props: any) {
         dark:text-gray-400 
         dark:hover:text-white 
         dark:hover:bg-gray-600 
-        dark:focus:ring-gray-800">
+        dark:focus:ring-gray-800"
+      onClick={props.onClick}>
     {props.text}
     </button>
   ); 

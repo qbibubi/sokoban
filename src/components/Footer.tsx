@@ -1,13 +1,21 @@
-import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
+import { FaDiscord } from 'react-icons/fa';
 
 export default function AuthorDetails() {
   return (
-    <footer className="mt-auto">
-      <span className="text-sm text-gray-500 sm:text-center">Jakub Sobieraj</span>
-      <div className="flex flex-row justify-center items-center">
-        <AiFillLinkedin onClick={() => window.location.replace("https://www.linkedin.com/in/jakub-sobieraj-11b96025a/")} size={32}/>
-        <AiOutlineGithub onClick={() => window.location.replace("https://www.github.com/qbibubi")} size={32}/>
-      </div>
-    </footer>
+    <div className="absolute inset-x-0 bottom-0 bg-stone-900">
+      <footer className="flex flex-row justify-center items-center text-gray-500 pa-4">
+        <div className="flex flex-row  pr-1">
+          <span className="text-sm sm:text-center pr-1">Created by</span>
+          <span className="text-sm sm:text-center pr-1 hover:text-white">Jakub</span>
+          <span className="text-sm sm:text-center pr-1 hover:text-white">Sobieraj</span>
+        </div>
+        <div className="flex flex-row">
+          <a className="hover:text-white" href="https://www.linkedin.com/in/jakub-sobieraj-11b96025a/"><AiFillLinkedin size={24}/></a>
+          <a className="hover:text-white" href="https://www.github.com/qbibubi/sokoban"><AiOutlineGithub size={24}/></a>
+          <a className="hover:text-white" onClick={() => {navigator.clipboard.writeText("QBI#1788")}}><FaDiscord size={24}/></a>
+        </div>
+      </footer>
+    </div>
   ); 
 }

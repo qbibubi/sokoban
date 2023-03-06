@@ -1,15 +1,14 @@
-import React from 'react';
-import Footer from './components/Footer';
 import Menu from "./components/Menu";
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-  <div className="bg-zinc-800">
-    <div className="container mx-auto h-screen">
-      <Menu />
+    <div className="wrapper bg-zinc-800 h-screen">
+      <div className="container mx-auto h-full">
+        <Menu />
+      </div>
       <Footer />
     </div>
-  </div>
   );
 }
 
