@@ -4,14 +4,14 @@ export default function MenuButton(props: any) {
       type="button" 
       className="
         w-1/5
-        text-gray-900 
+        text-white-900 
         hover:text-white 
         border 
         border-neutral-800 
-        hover:bg-gray-900 
+        hover:bg-stone-900 
         focus:ring-4 
         focus:outline-none 
-        focus:ring-gray-300 
+        focus:ring-stone-300 
         font-medium 
         rounded-lg 
         text-sm 
@@ -19,11 +19,11 @@ export default function MenuButton(props: any) {
         py-2.5 
         text-center 
         mb-1
-        dark:border-gray-600 
-        dark:text-gray-400 
+        dark:border-stone-600 
+        dark:text-stone-400 
         dark:hover:text-white 
-        dark:hover:bg-gray-600 
-        dark:focus:ring-gray-800"
+        dark:hover:bg-stone-600 
+        dark:focus:ring-stone-800"
       onClick={props.onClick}>
     {props.text}
     </button>
